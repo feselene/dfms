@@ -1,5 +1,3 @@
-Here’s a formatted **README** for your **Dynamic Fleet Management System (DFMS)** project. This structure includes sections for an overview, features, setup, and technologies used.
-
 ---
 
 # Dynamic Fleet Management System (DFMS)
