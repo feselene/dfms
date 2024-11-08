@@ -10,6 +10,7 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.example.dfms.ui.HomeScreen
 import com.example.dfms.ui.LoginScreen
 import com.example.dfms.ui.SignupScreen
 
@@ -37,9 +38,9 @@ fun MyAppNavHost() {
 
     NavHost(
         navController = navController,
-        startDestination = "login"
+        startDestination = "login" // Start with LoginScreen
     ) {
         composable("login") { LoginScreen(navController) }
-        composable("signup") { SignupScreen(navController) }
+        composable("home") { HomeScreen(navController) } // Add HomeScreen to the navigation graph
     }
 }
