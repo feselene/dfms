@@ -10,7 +10,7 @@ import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 
 @Composable
-fun SignupScreen(navController: NavController) {
+fun LoginScreen(navController: NavController) {
     Column(
         modifier = Modifier
             .fillMaxSize()
@@ -18,12 +18,12 @@ fun SignupScreen(navController: NavController) {
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        Text(text = "Signup Screen")
+        Text(text = "Login Screen")
 
         Spacer(modifier = Modifier.height(16.dp))
 
-        Button(onClick = { navController.popBackStack() }) {
-            Text("Go Back to Login")
+        Button(onClick = { navController.navigate("signup") }) {
+            Text("Go to Signup")
         }
     }
 }
