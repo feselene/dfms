@@ -1,0 +1,4 @@
+Django==4.2.11               # Main Django framework
+djangorestframework==3.15.1  # Django REST framework for API development
+psycopg2-binary==2.9.9       # PostgreSQL adapter for Python (needed to connect Django to PostgreSQL)
+django-cors-headers==3.14.0  # CORS support for handling cross-origin requests, useful for mobile app access
